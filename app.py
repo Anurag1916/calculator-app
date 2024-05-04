@@ -1,4 +1,4 @@
-from calc_func import do_addition, do_subtraction
+from calc_func import do_addition, do_subtraction, calculate_area_rectangle
 
 def main():
     print('Welcome to the calculator App')
@@ -6,6 +6,7 @@ def main():
           \nSelect the function from the given options
           1. Add
           2. Substract
+          3, Division
           """)
     
           
@@ -18,6 +19,8 @@ def main():
         result =do_addition(a,b)
     elif user_input=="2":
         result=do_subtraction(a,b)
+    elif user_input=="3":
+        result=calculate_area_rectangle(a,b)
         
     print(f"Result is {result}")
 
